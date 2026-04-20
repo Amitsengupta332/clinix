@@ -6,61 +6,129 @@
     <title>Kontakt - Jakobsclean</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body class="bg-white font-sans text-gray-800">
     <div data-include="./components/navbar.html"></div>
 
-    <main class="py-16">
-      <section class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div class="mb-12 text-center">
-          <h1 class="text-4xl font-bold text-[#0b2c8f] sm:text-5xl">Kontakt</h1>
-          <p class="mt-4 text-lg text-gray-600">
-            Wir freuen uns auf Ihre Anfrage
-          </p>
-        </div>
+    <main class="bg-[#f5f5f5] py-16">
+      <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-3">
+          <!-- Linke Seite -->
+          <div class="lg:col-span-2">
+            <!-- Karte -->
+            <div class="overflow-hidden bg-white shadow-sm">
+              <iframe
+                src="https://www.google.com/maps?q=Ludwigstra%C3%9Fe%2037,%2064646%20Heppenheim&output=embed"
+                width="100%"
+                height="420"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Standort Jakobsclean"
+              ></iframe>
+            </div>
 
-        <div class="grid gap-10 lg:grid-cols-2">
-          <div class="space-y-4 text-lg">
-            <p><strong>Adresse:</strong> Ludwigstraße 37, 64646 Heppenheim</p>
-            <p><strong>Mobil:</strong> 0176 / 31419707</p>
-            <p><strong>Telefon:</strong> 06252 / 5950420</p>
-            <p><strong>E-Mail:</strong> jakobsclean2@gmail.com</p>
-            <p><strong>Web:</strong> www.jakobsclean.de</p>
+            <!-- Kontaktdaten -->
+            <div class="grid gap-8 bg-white px-6 py-8 md:grid-cols-3">
+              <!-- Telefon -->
+              <div class="flex items-start gap-4">
+                <div class="pt-1 text-3xl text-[#2f80ed]">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-[#0b2c8f]">Telefon:</h3>
+                  <p class="mt-3 text-gray-600">0176 / 31419707</p>
+                  <p class="mt-2 text-gray-600">06252 / 5950420</p>
+                </div>
+              </div>
+
+              <!-- E-Mail -->
+              <div class="flex items-start gap-4">
+                <div class="pt-1 text-3xl text-[#2f80ed]">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-[#0b2c8f]">E-Mail:</h3>
+                  <p class="mt-3 break-all text-gray-600 sm:break-normal">
+                    jakobsclean2@gmail.com
+                  </p>
+                  <p class="mt-2 break-all text-gray-600 sm:break-normal">
+                    info@jakobsclean.de
+                  </p>
+                </div>
+              </div>
+
+              <!-- Adresse -->
+              <div class="flex items-start gap-4">
+                <div class="pt-1 text-3xl text-[#2f80ed]">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-[#0b2c8f]">Adresse:</h3>
+                  <p class="mt-3 text-gray-600">
+                    Ludwigstraße 37, 64646 Heppenheim
+                  </p>
+                  <p class="mt-2 text-gray-600">Deutschland</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <form class="space-y-4">
-            <input
-              type="text"
-              placeholder="Ihr Name"
-              class="h-12 w-full border border-gray-300 px-4 outline-none focus:border-[#2f80ed]"
-            />
-            <input
-              type="email"
-              placeholder="Ihre E-Mail"
-              class="h-12 w-full border border-gray-300 px-4 outline-none focus:border-[#2f80ed]"
-            />
-            <input
-              type="text"
-              placeholder="Telefon"
-              class="h-12 w-full border border-gray-300 px-4 outline-none focus:border-[#2f80ed]"
-            />
-            <textarea
-              rows="6"
-              placeholder="Ihre Nachricht"
-              class="w-full border border-gray-300 px-4 py-3 outline-none focus:border-[#2f80ed]"
-            ></textarea>
-            <button
-              type="submit"
-              class="rounded bg-[#2f80ed] px-6 py-3 text-white transition hover:bg-[#1d6fe0]"
-            >
-              Nachricht senden
-            </button>
-          </form>
+          <!-- Rechte Seite -->
+          <div class="bg-white p-8 shadow-sm">
+            <p class="text-4xl font-bold leading-snug text-[#0b2c8f]">
+              Haben Sie Fragen?
+            </p>
+
+            <div class="mt-4 h-[3px] w-16 bg-[#2f80ed]"></div>
+
+            <form class="mt-8 space-y-3">
+              <input
+                type="text"
+                placeholder="Name*"
+                class="h-12 w-full border border-gray-200 bg-[#f7f7f7] px-4 text-sm outline-none transition focus:border-[#2f80ed]"
+              />
+
+              <input
+                type="email"
+                placeholder="E-Mail-Adresse*"
+                class="h-12 w-full border border-gray-200 bg-[#f7f7f7] px-4 text-sm outline-none transition focus:border-[#2f80ed]"
+              />
+
+              <input
+                type="text"
+                placeholder="Telefon*"
+                class="h-12 w-full border border-gray-200 bg-[#f7f7f7] px-4 text-sm outline-none transition focus:border-[#2f80ed]"
+              />
+
+              <input
+                type="text"
+                placeholder="Betreff*"
+                class="h-12 w-full border border-gray-200 bg-[#f7f7f7] px-4 text-sm outline-none transition focus:border-[#2f80ed]"
+              />
+
+              <textarea
+                rows="5"
+                placeholder="Nachricht"
+                class="w-full resize-none border border-gray-200 bg-[#f7f7f7] px-4 py-3 text-sm outline-none transition focus:border-[#2f80ed]"
+              ></textarea>
+
+              <button
+                type="submit"
+                class="mt-3 inline-flex w-full items-center justify-center bg-[#2f80ed] px-6 py-4 text-base font-semibold text-white transition hover:bg-[#1d6fe0]"
+              >
+                Nachricht senden
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
