@@ -1,4 +1,4 @@
-<section class="bg-[#f5f5f5] py-16">
+<!-- <section class="bg-[#f5f5f5] py-16">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="grid items-center gap-12 lg:grid-cols-2">
       <div class="flex justify-center">
@@ -68,6 +68,90 @@
           </button>
         </form>
       </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="bg-[#f5f5f5] py-16">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid items-center gap-12 lg:grid-cols-2">
+      
+      <!-- Image -->
+      <div class="flex justify-center">
+        <img
+          src="./assets/images/about4.png"
+          alt="Kontakt"
+          class="h-auto max-w-full object-contain"
+        />
+      </div>
+
+      <!-- Content -->
+      <div>
+        <p class="mb-3 text-sm font-medium text-[#2f80ed]">
+          Haben Sie Fragen?
+        </p>
+
+        <h2 class="text-3xl font-extrabold leading-tight text-[#0b2c8f] sm:text-4xl">
+          Kontaktieren Sie uns <br />
+          <span class="font-medium">Wir helfen Ihnen gerne weiter</span>
+        </h2>
+
+        <form class="mt-8 space-y-4">
+          
+          <!-- Name + Phone -->
+          <div class="grid gap-4 sm:grid-cols-2">
+            <input
+              type="text"
+              placeholder="Name*"
+              class="h-12 w-full border border-gray-300 bg-white px-4 text-sm outline-none transition focus:border-[#2f80ed]"
+            />
+            <input
+              type="text"
+              placeholder="Telefon*"
+              class="h-12 w-full border border-gray-300 bg-white px-4 text-sm outline-none transition focus:border-[#2f80ed]"
+            />
+          </div>
+
+          <!-- Email + Service -->
+          <div class="grid gap-4 sm:grid-cols-2">
+            <input
+              type="email"
+              placeholder="E-Mail*"
+              class="h-12 w-full border border-gray-300 bg-white px-4 text-sm outline-none transition focus:border-[#2f80ed]"
+            />
+
+            <select
+              class="h-12 w-full border border-gray-300 bg-white px-4 text-sm text-gray-500 outline-none transition focus:border-[#2f80ed]"
+            >
+              <option>Dienstleistung auswählen</option>
+              <option>Büroreinigung</option>
+              <option>Bodenreinigung</option>
+              <option>Dachrinnenreinigung</option>
+              <option>Badreinigung</option>
+              <option>Hausreinigung</option>
+              <option>Küchenreinigung</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <textarea
+            rows="5"
+            placeholder="Nachricht schreiben..."
+            class="w-full resize-none border border-gray-300 bg-white px-4 py-3 text-sm outline-none transition focus:border-[#2f80ed]"
+          ></textarea>
+
+          <!-- Button -->
+          <button
+            type="submit"
+            class="inline-flex items-center gap-2 bg-[#2f80ed] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1d6fe0]"
+          >
+            Anfrage senden
+            <span>&#8250;</span>
+          </button>
+
+        </form>
+      </div>
+
     </div>
   </div>
 </section>
