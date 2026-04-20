@@ -39,3 +39,17 @@
 .animate-zoom {
   animation: zoom 10s ease-in-out infinite alternate;
 }
+
+.hero-slide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hero-dot.active {
+  background-color: #f4df1b;
+}
