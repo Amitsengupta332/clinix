@@ -1,0 +1,59 @@
+    <header class="w-full bg-white shadow-sm">
+      <div
+        class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+        <!-- Logo -->
+        <a href="#" class="text-[22px] font-semibold text-[#0d6b34]">
+          <span class="font-bold">B. K</span> Gebäudemanagement
+        </a>
+
+        <!-- Desktop nav -->
+        <nav
+          class="hidden items-center gap-8 text-[15px] text-[#666666] lg:flex">
+          <a href="#" class="text-[#222222] hover:text-[#0d6b34]">Home</a>
+          <a href="#" class="hover:text-[#0d6b34]">Über uns</a>
+
+          <div class="group relative">
+            <button class="flex items-center gap-2 hover:text-[#0d6b34]">
+              <span>Leistungen</span>
+              <i class="fa-solid fa-caret-down text-xs"></i>
+            </button>
+
+            <!-- Dropdown -->
+            <div
+              class="invisible absolute left-0 top-full z-20 mt-3 w-52 rounded-md border border-gray-200 bg-white opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:opacity-100">
+              <a
+                href="#"
+                class="block px-4 py-3 hover:bg-gray-50 hover:text-[#0d6b34]"
+                >Unterhaltsreinigung</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-3 hover:bg-gray-50 hover:text-[#0d6b34]"
+                >Glasreinigung</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-3 hover:bg-gray-50 hover:text-[#0d6b34]"
+                >Hausmeisterservice</a
+              >
+            </div>
+          </div>
+
+          <a href="#" class="hover:text-[#0d6b34]">Impressum</a>
+          <a href="#" class="hover:text-[#0d6b34]">Datenschutzerklärung</a>
+          <a href="#" class="hover:text-[#0d6b34]">Stellenangebote/Jobs</a>
+        </nav>
+
+        <!-- Mobile menu button -->
+        <button
+          class="text-2xl text-[#666666] lg:hidden"
+          aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+
+           <!-- <a href="#" class="text-[22px] font-semibold text-[#0d6b34]">
+          <span class="font-bold">B. K</span> Gebäudemanagement
+        </a> -->

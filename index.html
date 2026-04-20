@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B. K Gebäudemanagement Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  </head>
+  <body class="bg-white font-sans">
+    <!-- Top contact bar -->
+    <div class="w-full bg-[#14287B] text-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <div
+          class="flex flex-col gap-4 py-3 text-sm sm:text-[15px] lg:flex-row lg:items-center lg:justify-between">
+          <div
+            class="font-medium uppercase tracking-wide text-center lg:text-left">
+            Kontaktieren Sie uns:
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center lg:justify-end lg:gap-6">
+            <a
+              href="tel:0621441318"
+              class="flex items-center gap-2 hover:text-[#7fb33d] transition">
+              <i class="fa-solid fa-phone text-[#7fb33d]"></i>
+              <span>0621 441318</span>
+            </a>
+
+            <a
+              href="mailto:brigittekabel@gmx.de"
+              class="flex items-center gap-2 hover:text-[#7fb33d] transition break-all sm:break-normal">
+              <i class="fa-solid fa-envelope text-[#7fb33d]"></i>
+              <span>brigittekabel@gmx.de</span>
+            </a>
+
+            <div class="flex items-center gap-4 text-lg text-[#7fb33d]">
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="hover:opacity-80 transition">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="Twitter"
+                class="hover:opacity-80 transition">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="hover:opacity-80 transition">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                aria-label="Google Plus"
+                class="hover:opacity-80 transition">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main navbar -->
+    <header class="w-full bg-white shadow-sm">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <div class="flex items-center justify-between py-4 lg:py-5">
+          <!-- Logo -->
+          <a href="#" class="flex items-center shrink-0">
+            <img
+              src="/images/logo.png"
+              alt="Logo"
+              class="h-10 w-auto object-contain sm:h-12" />
+          </a>
+
+          <!-- Desktop nav -->
+          <nav
+            class="hidden items-center gap-6 xl:gap-8 text-[15px] text-[#666666] lg:flex">
+            <a href="#" class="text-[#222222] hover:text-[#0d6b34] transition"
+              >Home</a
+            >
+            <a href="#" class="hover:text-[#0d6b34] transition">Über uns</a>
+
+            <div class="group relative">
+              <button
+                type="button"
+                class="flex items-center gap-2 hover:text-[#0d6b34] transition">
+                <span>Leistungen</span>
+                <i class="fa-solid fa-caret-down text-xs"></i>
+              </button>
+
+              <!-- Desktop Dropdown -->
+              <div
+                class="invisible absolute left-0 top-full z-20 mt-3 w-56 rounded-md border border-gray-200 bg-white opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:opacity-100">
+                <a
+                  href="#"
+                  class="block px-4 py-3 hover:bg-gray-50 hover:text-[#0d6b34] transition">
+                  Unterhaltsreinigung
+                </a>
+                <a
+                  href="#"
+                  class="block px-4 py-3 hover:bg-gray-50 hover:text-[#0d6b34] transition">
+                  Glasreinigung
+                </a>
+                <a
+                  href="#"
+                  class="block px-4 py-3 hover:bg-gray-50 hover:text-[#0d6b34] transition">
+                  Hausmeisterservice
+                </a>
+              </div>
+            </div>
+
+            <a href="#" class="hover:text-[#0d6b34] transition">Impressum</a>
+            <a href="#" class="hover:text-[#0d6b34] transition"
+              >Datenschutzerklärung</a
+            >
+            <a href="#" class="hover:text-[#0d6b34] transition"
+              >Stellenangebote/Jobs</a
+            >
+          </nav>
+
+          <!-- Mobile menu button -->
+          <button
+            id="menuBtn"
+            type="button"
+            class="text-2xl text-[#666666] lg:hidden"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div
+          id="mobileMenu"
+          class="hidden border-t border-gray-200 pb-4 lg:hidden">
+          <nav class="flex flex-col pt-4 text-[15px] text-[#666666]">
+            <a href="#" class="py-3 hover:text-[#0d6b34] transition">Home</a>
+            <a href="#" class="py-3 hover:text-[#0d6b34] transition"
+              >Über uns</a
+            >
+
+            <!-- Mobile dropdown -->
+            <div class="border-b border-gray-100">
+              <button
+                id="servicesBtn"
+                type="button"
+                class="flex w-full items-center justify-between py-3 text-left hover:text-[#0d6b34] transition">
+                <span>Leistungen</span>
+                <i id="servicesIcon" class="fa-solid fa-caret-down text-xs"></i>
+              </button>
+
+              <div id="servicesMenu" class="hidden pb-3 pl-4">
+                <a
+                  href="#"
+                  class="block py-2 text-sm hover:text-[#0d6b34] transition">
+                  Unterhaltsreinigung
+                </a>
+                <a
+                  href="#"
+                  class="block py-2 text-sm hover:text-[#0d6b34] transition">
+                  Glasreinigung
+                </a>
+                <a
+                  href="#"
+                  class="block py-2 text-sm hover:text-[#0d6b34] transition">
+                  Hausmeisterservice
+                </a>
+              </div>
+            </div>
+
+            <a href="#" class="py-3 hover:text-[#0d6b34] transition"
+              >Impressum</a
+            >
+            <a href="#" class="py-3 hover:text-[#0d6b34] transition"
+              >Datenschutzerklärung</a
+            >
+            <a href="#" class="py-3 hover:text-[#0d6b34] transition"
+              >Stellenangebote/Jobs</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Why Choose Us Section bg-[#f7f7f7] -->
+    <section class=" py-16 lg:py-24">
+      <div
+        class="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-2">
+        <!-- Left Content -->
+        <div>
+          <p class="mb-3 text-sm font-medium text-[#2f6bff]">Why Choose Us</p>
+
+          <h2
+            class="max-w-xl text-3xl font-bold leading-tight text-[#12308a] sm:text-4xl lg:text-[48px]">
+            We Will Make Absolutely Any Place Clean, Neat & Tidy.
+          </h2>
+
+          <p class="mt-5 max-w-xl text-[15px] leading-8 text-gray-600">
+            Spa isa newsimply dummy text of the printing and type settingreat
+            industrial lorem Ipsum has been the industry's standard dummy text
+            everty since the when an unknown centurie.
+          </p>
+
+          <!-- Features -->
+          <div class="mt-10 space-y-8">
+            <!-- Item 1 -->
+            <div class="flex items-start gap-4">
+              <div
+                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#2f6bff] text-[#2f6bff]">
+                <i class="fa-solid fa-check text-sm"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-[#12308a]">
+                  Customer Focused Reviews
+                </h3>
+                <p class="mt-2 max-w-lg text-[15px] leading-7 text-gray-600">
+                  Aorem ipsum dolor sit amet consectetur adipisicing elit sed do
+                  eiusmod tempor incididunt ut labore et dolore.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="flex items-start gap-4">
+              <div
+                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#2f6bff] text-[#2f6bff]">
+                <i class="fa-solid fa-check text-sm"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-[#12308a]">
+                  We Are Committed
+                </h3>
+                <p class="mt-2 max-w-lg text-[15px] leading-7 text-gray-600">
+                  Aorem ipsum dolor sit amet consectetur adipisicing elit sed do
+                  eiusmod tempor incididunt ut labore et dolore.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="flex items-start gap-4">
+              <div
+                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#2f6bff] text-[#2f6bff]">
+                <i class="fa-solid fa-check text-sm"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-[#12308a]">
+                  Regular & Monthly Cleaning
+                </h3>
+                <p class="mt-2 max-w-lg text-[15px] leading-7 text-gray-600">
+                  Aorem ipsum dolor sit amet consectetur adipisicing elit sed do
+                  eiusmod tempor incididunt ut labore et dolore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Images -->
+        <div
+          class="relative mx-auto flex w-full max-w-[560px] items-center justify-center min-h-[420px] sm:min-h-[500px]">
+          <!-- Background shape -->
+          <div
+            class="absolute right-6 top-2 hidden h-40 w-40 rotate-12 border-[10px] border-[#e9edf7] opacity-70 lg:block"></div>
+
+          <!-- Main Top Image -->
+          <div
+            class="absolute top-0 left-1/2 z-20 w-[230px] -translate-x-1/2 sm:w-[280px] lg:w-[300px]">
+            <div
+              class="overflow-hidden rounded-full border-[10px] border-white shadow-lg">
+              <img
+                src="images/img_tri_1.png"
+                alt="Cleaning service"
+                class="h-[230px] w-full object-cover sm:h-[280px] lg:h-[300px]" />
+            </div>
+          </div>
+
+          <!-- Bottom Left Image -->
+          <div
+            class="absolute bottom-0 left-0 z-10 w-[220px] sm:w-[250px] lg:w-[270px]">
+            <div
+              class="overflow-hidden rounded-full border-[10px] border-white shadow-lg">
+              <img
+                src="images/img_tri_2.png"
+                alt="Professional cleaner"
+                class="h-[220px] w-full object-cover sm:h-[250px] lg:h-[270px]" />
+            </div>
+          </div>
+
+          <!-- Bottom Right Image -->
+          <div
+            class="absolute bottom-6 right-0 z-30 w-[210px] sm:w-[240px] lg:w-[260px]">
+            <div
+              class="overflow-hidden rounded-full border-[10px] border-white shadow-lg">
+              <img
+                src="images/img_tri_3.png"
+                alt="Home cleaning"
+                class="h-[210px] w-full object-cover sm:h-[240px] lg:h-[260px]" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#14287B] text-white">
+      <div
+        class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:py-16">
+        <!-- Logo + About -->
+        <div>
+          <div class="mb-6">
+            <img
+              src="/images/logo.png"
+              alt="Jakobsclean Logo"
+              class="w-40 object-contain sm:w-48 md:w-56" />
+          </div>
+
+          <p class="mb-6 text-sm leading-relaxed text-gray-300">
+            Professionelle Glas & Gebäudereinigung mit höchstem
+            Qualitätsanspruch. Zuverlässig, gründlich und flexibel für Ihre
+            Bedürfnisse.
+          </p>
+
+          <h3 class="mb-3 font-semibold">Follow Us On:</h3>
+          <div class="flex gap-4 text-lg text-gray-300">
+            <i class="fab fa-facebook-f cursor-pointer hover:text-white"></i>
+            <i class="fab fa-instagram cursor-pointer hover:text-white"></i>
+            <i class="fab fa-linkedin-in cursor-pointer hover:text-white"></i>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h3 class="mb-5 text-xl font-semibold">Services</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li class="cursor-pointer hover:text-white">› Glasreinigung</li>
+            <li class="cursor-pointer hover:text-white">› Gebäudereinigung</li>
+            <li class="cursor-pointer hover:text-white">› Büroreinigung</li>
+            <li class="cursor-pointer hover:text-white">
+              › Treppenhausreinigung
+            </li>
+            <li class="cursor-pointer hover:text-white">› Grundreinigung</li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="mb-5 text-xl font-semibold">Quick links</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li class="cursor-pointer hover:text-white">› Home</li>
+            <li class="cursor-pointer hover:text-white">› Über uns</li>
+            <li class="cursor-pointer hover:text-white">› Leistungen</li>
+            <li class="cursor-pointer hover:text-white">› Kontakt</li>
+            <li class="cursor-pointer hover:text-white">› Impressum</li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="mb-5 text-xl font-semibold">Kontakt</h3>
+          <ul class="space-y-4 text-sm text-gray-300">
+            <li class="flex items-start gap-3">
+              <i class="fas fa-map-marker-alt mt-1"></i>
+              <span>Deutschland</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fas fa-phone"></i>
+              <span>+49 XXX XXX XXXX</span>
+            </li>
+            <li class="flex items-center gap-3 break-all sm:break-normal">
+              <i class="fas fa-envelope"></i>
+              <span>info@jakobsclean.de</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="mt-4 border-t border-white/20">
+        <div
+          class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 text-center text-sm text-gray-300 sm:px-6 md:flex-row md:text-left">
+          <p>© 2025 Jakobsclean. All Rights Reserved</p>
+          <div
+            class="flex flex-wrap justify-center gap-4 md:justify-end md:gap-6">
+            <a href="#" class="hover:text-white">Impressum</a>
+            <a href="#" class="hover:text-white">Datenschutz</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const servicesBtn = document.getElementById("servicesBtn");
+      const servicesMenu = document.getElementById("servicesMenu");
+      const servicesIcon = document.getElementById("servicesIcon");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+
+        const expanded = menuBtn.getAttribute("aria-expanded") === "true";
+        menuBtn.setAttribute("aria-expanded", !expanded);
+
+        const icon = menuBtn.querySelector("i");
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-xmark");
+      });
+
+      servicesBtn.addEventListener("click", () => {
+        servicesMenu.classList.toggle("hidden");
+        servicesIcon.classList.toggle("rotate-180");
+      });
+    </script>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+  </body>
+</html>
