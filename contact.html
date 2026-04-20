@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt - Jakobsclean</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="bg-white font-sans text-gray-800">
+    <div data-include="./components/navbar.html"></div>
+
+    <main class="py-16">
+      <section class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 text-center">
+          <h1 class="text-4xl font-bold text-[#0b2c8f] sm:text-5xl">Kontakt</h1>
+          <p class="mt-4 text-lg text-gray-600">
+            Wir freuen uns auf Ihre Anfrage
+          </p>
+        </div>
+
+        <div class="grid gap-10 lg:grid-cols-2">
+          <div class="space-y-4 text-lg">
+            <p><strong>Adresse:</strong> Ludwigstraße 37, 64646 Heppenheim</p>
+            <p><strong>Mobil:</strong> 0176 / 31419707</p>
+            <p><strong>Telefon:</strong> 06252 / 5950420</p>
+            <p><strong>E-Mail:</strong> jakobsclean2@gmail.com</p>
+            <p><strong>Web:</strong> www.jakobsclean.de</p>
+          </div>
+
+          <form class="space-y-4">
+            <input
+              type="text"
+              placeholder="Ihr Name"
+              class="h-12 w-full border border-gray-300 px-4 outline-none focus:border-[#2f80ed]"
+            />
+            <input
+              type="email"
+              placeholder="Ihre E-Mail"
+              class="h-12 w-full border border-gray-300 px-4 outline-none focus:border-[#2f80ed]"
+            />
+            <input
+              type="text"
+              placeholder="Telefon"
+              class="h-12 w-full border border-gray-300 px-4 outline-none focus:border-[#2f80ed]"
+            />
+            <textarea
+              rows="6"
+              placeholder="Ihre Nachricht"
+              class="w-full border border-gray-300 px-4 py-3 outline-none focus:border-[#2f80ed]"
+            ></textarea>
+            <button
+              type="submit"
+              class="rounded bg-[#2f80ed] px-6 py-3 text-white transition hover:bg-[#1d6fe0]"
+            >
+              Nachricht senden
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div data-include="./components/footer.html"></div>
+
+    <script src="./assets/js/include.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
