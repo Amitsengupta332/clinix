@@ -12,103 +12,267 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body class="bg-white font-sans text-gray-800">
+
+  <body class="bg-slate-50 font-sans text-gray-800">
     <div data-include="./components/navbar.html"></div>
 
+    <!-- HERO -->
+    <section class="relative overflow-hidden bg-[#0b2c8f] py-20">
+      <div class="absolute inset-0 bg-gradient-to-r from-[#0b2c8f] via-[#1239b0] to-[#0b2c8f] opacity-95"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.25),transparent_30%)]"></div>
+
+      <div class="relative mx-auto max-w-6xl px-4 text-center text-white sm:px-6 lg:px-8">
+        <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
+          Jakobsclean
+        </p>
+        <h1 class="text-4xl font-extrabold md:text-5xl">Über uns</h1>
+        <p class="mx-auto mt-4 max-w-2xl text-sm leading-7 text-blue-100 md:text-base">
+          Ihr zuverlässiger Partner für professionelle Glas- und Gebäudereinigung in Heppenheim und Umgebung.
+        </p>
+      </div>
+    </section>
+
     <main class="py-16">
-      <section class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div class="mb-12 text-center">
-          <h1 class="text-4xl font-bold text-[#0b2c8f] sm:text-5xl">Über uns</h1>
-          <p class="mt-4 text-lg text-gray-600">Willkommen bei Jakobsclean</p>
-        </div>
+      <section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-8 lg:grid-cols-[280px_1fr]">
+          <!-- SIDEBAR -->
+          <aside>
+            <div class="sticky top-24 rounded-2xl bg-white p-6 shadow-lg shadow-slate-200/60 ring-1 ring-slate-100">
+              <h2 class="border-b-4 border-cyan-400 pb-3 text-2xl font-bold text-[#0b2c8f]">
+                Warum wir?
+              </h2>
 
-        <div class="space-y-10 leading-8 text-gray-700">
-          <div>
-            <p>
-              Jakobsclean steht für zuverlässige, gründliche und professionelle
-              Glas- und Gebäudereinigung. Mit unserem Sitz in Heppenheim bieten
-              wir unseren Kunden maßgeschneiderte Reinigungslösungen für private,
-              gewerbliche und öffentliche Objekte.
-            </p>
-            <p class="mt-4">
-              Unser Ziel ist es, Ihnen nicht nur Sauberkeit, sondern auch
-              Vertrauen und langfristige Zufriedenheit zu bieten.
-            </p>
-          </div>
+              <ul class="mt-6 space-y-4 text-sm text-gray-700">
+                <li class="flex items-start gap-3">
+                  <div class="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-[#0b2c8f] text-white">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <span>Zuverlässiger und termingerechter Service</span>
+                </li>
 
-          <div>
-            <h2 class="mb-3 text-2xl font-semibold text-[#0b2c8f]">Wer wir sind</h2>
-            <p>
-              Wir sind ein engagiertes Reinigungsunternehmen mit Fokus auf
-              Qualität, Zuverlässigkeit und Kundennähe. Unser erfahrenes Team
-              arbeitet mit modernen Reinigungstechniken und hochwertigen,
-              umweltfreundlichen Reinigungsmitteln, um beste Ergebnisse zu
-              erzielen.
-            </p>
-            <p class="mt-4">
-              Egal ob regelmäßige Unterhaltsreinigung oder intensive
-              Grundreinigung – wir passen unsere Leistungen individuell an Ihre
-              Bedürfnisse an.
-            </p>
-          </div>
+                <li class="flex items-start gap-3">
+                  <div class="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-[#0b2c8f] text-white">
+                    <i class="fa-solid fa-user-group"></i>
+                  </div>
+                  <span>Freundliches und geschultes Team</span>
+                </li>
 
-          <div>
-            <h2 class="mb-3 text-2xl font-semibold text-[#0b2c8f]">Unsere Leistungen</h2>
-            <ul class="grid gap-3 sm:grid-cols-2">
-              <li>✔ Grundreinigung</li>
-              <li>✔ Glas- und Fensterreinigung</li>
-              <li>✔ Unterhaltsreinigung</li>
-              <li>✔ Treppenhausreinigung</li>
-              <li>✔ Büroreinigung</li>
-              <li>✔ Bauendreinigung</li>
-              <li>✔ Teppichreinigung</li>
-              <li>✔ Praxisreinigung</li>
-              <li>✔ Winterdienst</li>
-            </ul>
-            <p class="mt-4">
-              Unser Anspruch ist es, jede Aufgabe mit höchster Sorgfalt und
-              Professionalität auszuführen.
-            </p>
-          </div>
+                <li class="flex items-start gap-3">
+                  <div class="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-[#0b2c8f] text-white">
+                    <i class="fa-solid fa-leaf"></i>
+                  </div>
+                  <span>Moderne und umweltfreundliche Reinigungsmittel</span>
+                </li>
 
-          <div>
-            <h2 class="mb-3 text-2xl font-semibold text-[#0b2c8f]">Warum Jakobsclean?</h2>
-            <ul class="space-y-2">
-              <li>✔ Zuverlässiger Service und termingerechte Ausführung</li>
-              <li>✔ Individuelle Reinigungskonzepte für jeden Kunden</li>
-              <li>✔ Geschultes und freundliches Personal</li>
-              <li>✔ Einsatz moderner und umweltfreundlicher Reinigungsmittel</li>
-              <li>✔ Transparente Preise ohne versteckte Kosten</li>
-            </ul>
-            <p class="mt-4">
-              Wir legen großen Wert auf Qualität und arbeiten stets daran, die
-              Erwartungen unserer Kunden zu übertreffen.
-            </p>
-          </div>
+                <li class="flex items-start gap-3">
+                  <div class="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-[#0b2c8f] text-white">
+                    <i class="fa-solid fa-handshake"></i>
+                  </div>
+                  <span>Individuelle Lösungen für jeden Kunden</span>
+                </li>
 
-          <div>
-            <h2 class="mb-3 text-2xl font-semibold text-[#0b2c8f]">Unsere Mission</h2>
-            <p>
-              Unsere Mission ist es, saubere, hygienische und angenehme Räume zu
-              schaffen, in denen Sie sich wohlfühlen können – sei es im Büro, in
-              der Praxis oder zu Hause.
-            </p>
-            <p class="mt-4">
-              Sauberkeit ist für uns nicht nur eine Dienstleistung, sondern ein
-              Versprechen.
-            </p>
-          </div>
+                <li class="flex items-start gap-3">
+                  <div class="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-[#0b2c8f] text-white">
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span>Hoher Qualitätsanspruch bei jeder Reinigung</span>
+                </li>
+              </ul>
+            </div>
+          </aside>
 
-          <div>
-            <h2 class="mb-3 text-2xl font-semibold text-[#0b2c8f]">
-              Kontaktieren Sie uns
-            </h2>
-            <div class="space-y-2">
-              <p>📍 Ludwigstraße 37, 64646 Heppenheim</p>
-              <p>📞 0176 / 31419707</p>
-              <p>☎️ 06252 / 5950420</p>
-              <p>✉️ jakobsclean2@gmail.com</p>
-              <p>🌐 www.jakobsclean.de</p>
+          <!-- CONTENT -->
+          <div class="space-y-8">
+            <!-- Intro -->
+            <div class="rounded-3xl bg-white p-8 shadow-xl shadow-slate-200/60 ring-1 ring-slate-100 md:p-10">
+              <div class="flex items-center gap-4">
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#0b2c8f] text-white shadow-md">
+                  <i class="fa-solid fa-building text-xl"></i>
+                </div>
+                <div>
+                  <h2 class="text-3xl font-extrabold text-[#0b2c8f]">Willkommen bei Jakobsclean</h2>
+                  <p class="mt-1 text-sm text-gray-500">Professionell. Gründlich. Zuverlässig.</p>
+                </div>
+              </div>
+
+              <div class="mt-6 space-y-4 leading-8 text-gray-700">
+                <p>
+                  Jakobsclean steht für zuverlässige, gründliche und professionelle
+                  Glas- und Gebäudereinigung. Mit unserem Sitz in Heppenheim bieten
+                  wir unseren Kunden maßgeschneiderte Reinigungslösungen für private,
+                  gewerbliche und öffentliche Objekte.
+                </p>
+                <p>
+                  Unser Ziel ist es, Ihnen nicht nur Sauberkeit, sondern auch
+                  Vertrauen und langfristige Zufriedenheit zu bieten.
+                </p>
+              </div>
+            </div>
+
+            <!-- Wer wir sind -->
+            <div class="rounded-3xl bg-white p-8 shadow-lg shadow-slate-200/60 ring-1 ring-slate-100">
+              <h2 class="text-2xl font-bold text-[#0b2c8f]">Wer wir sind</h2>
+              <div class="mt-4 space-y-4 leading-8 text-gray-700">
+                <p>
+                  Wir sind ein engagiertes Reinigungsunternehmen mit Fokus auf
+                  Qualität, Zuverlässigkeit und Kundennähe. Unser erfahrenes Team
+                  arbeitet mit modernen Reinigungstechniken und hochwertigen,
+                  umweltfreundlichen Reinigungsmitteln, um beste Ergebnisse zu
+                  erzielen.
+                </p>
+                <p>
+                  Egal ob regelmäßige Unterhaltsreinigung oder intensive
+                  Grundreinigung – wir passen unsere Leistungen individuell an Ihre
+                  Bedürfnisse an.
+                </p>
+              </div>
+            </div>
+
+            <!-- Leistungen -->
+            <div class="rounded-3xl bg-white p-8 shadow-lg shadow-slate-200/60 ring-1 ring-slate-100">
+              <h2 class="text-2xl font-bold text-[#0b2c8f]">Unsere Leistungen</h2>
+              <p class="mt-4 leading-8 text-gray-700">
+                Unser Anspruch ist es, jede Aufgabe mit höchster Sorgfalt und
+                Professionalität auszuführen.
+              </p>
+
+              <div class="mt-6 grid gap-4 sm:grid-cols-2">
+                <div class="flex items-center gap-3 rounded-xl bg-slate-50 p-4">
+                  <i class="fa-solid fa-check text-cyan-500"></i>
+                  <span>Grundreinigung</span>
+                </div>
+                <div class="flex items-center gap-3 rounded-xl bg-slate-50 p-4">
+                  <i class="fa-solid fa-check text-cyan-500"></i>
+                  <span>Glas- und Fensterreinigung</span>
+                </div>
+                <div class="flex items-center gap-3 rounded-xl bg-slate-50 p-4">
+                  <i class="fa-solid fa-check text-cyan-500"></i>
+                  <span>Unterhaltsreinigung</span>
+                </div>
+                <div class="flex items-center gap-3 rounded-xl bg-slate-50 p-4">
+                  <i class="fa-solid fa-check text-cyan-500"></i>
+                  <span>Treppenhausreinigung</span>
+                </div>
+                <div class="flex items-center gap-3 rounded-xl bg-slate-50 p-4">
+                  <i class="fa-solid fa-check text-cyan-500"></i>
+                  <span>Büroreinigung</span>
+                </div>
+                <div class="flex items-center gap-3 rounded-xl bg-slate-50 p-4">
+                  <i class="fa-solid fa-check text-cyan-500"></i>
+                  <span>Bauendreinigung</span>
+                </div>
+                <div class="flex items-center gap-3 rounded-xl bg-slate-50 p-4">
+                  <i class="fa-solid fa-check text-cyan-500"></i>
+                  <span>Teppichreinigung</span>
+                </div>
+                <div class="flex items-center gap-3 rounded-xl bg-slate-50 p-4">
+                  <i class="fa-solid fa-check text-cyan-500"></i>
+                  <span>Praxisreinigung</span>
+                </div>
+                <div class="flex items-center gap-3 rounded-xl bg-slate-50 p-4 sm:col-span-2">
+                  <i class="fa-solid fa-check text-cyan-500"></i>
+                  <span>Winterdienst</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Warum Jakobsclean -->
+            <div class="rounded-3xl bg-white p-8 shadow-lg shadow-slate-200/60 ring-1 ring-slate-100">
+              <h2 class="text-2xl font-bold text-[#0b2c8f]">Warum Jakobsclean?</h2>
+
+              <div class="mt-6 grid gap-4 md:grid-cols-2">
+                <div class="rounded-2xl border border-slate-100 bg-slate-50 p-5">
+                  <h3 class="font-semibold text-[#0b2c8f]">Zuverlässiger Service</h3>
+                  <p class="mt-2 text-sm leading-7 text-gray-600">
+                    Termingerechte Ausführung und saubere Ergebnisse bei jedem Einsatz.
+                  </p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-100 bg-slate-50 p-5">
+                  <h3 class="font-semibold text-[#0b2c8f]">Individuelle Konzepte</h3>
+                  <p class="mt-2 text-sm leading-7 text-gray-600">
+                    Maßgeschneiderte Reinigungslösungen für private und gewerbliche Kunden.
+                  </p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-100 bg-slate-50 p-5">
+                  <h3 class="font-semibold text-[#0b2c8f]">Freundliches Personal</h3>
+                  <p class="mt-2 text-sm leading-7 text-gray-600">
+                    Geschultes Team mit Erfahrung, Sorgfalt und professionellem Auftreten.
+                  </p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-100 bg-slate-50 p-5">
+                  <h3 class="font-semibold text-[#0b2c8f]">Transparente Preise</h3>
+                  <p class="mt-2 text-sm leading-7 text-gray-600">
+                    Klare Leistungen und faire Konditionen ohne versteckte Kosten.
+                  </p>
+                </div>
+              </div>
+
+              <p class="mt-6 leading-8 text-gray-700">
+                Wir legen großen Wert auf Qualität und arbeiten stets daran, die
+                Erwartungen unserer Kunden zu übertreffen.
+              </p>
+            </div>
+
+            <!-- Mission -->
+            <div class="rounded-3xl bg-white p-8 shadow-lg shadow-slate-200/60 ring-1 ring-slate-100">
+              <h2 class="text-2xl font-bold text-[#0b2c8f]">Unsere Mission</h2>
+              <div class="mt-4 space-y-4 leading-8 text-gray-700">
+                <p>
+                  Unsere Mission ist es, saubere, hygienische und angenehme Räume zu
+                  schaffen, in denen Sie sich wohlfühlen können – sei es im Büro, in
+                  der Praxis oder zu Hause.
+                </p>
+                <p>
+                  Sauberkeit ist für uns nicht nur eine Dienstleistung, sondern ein
+                  Versprechen.
+                </p>
+              </div>
+            </div>
+
+            <!-- Kontakt -->
+            <div class="rounded-3xl bg-[#0b2c8f] p-8 text-white shadow-xl shadow-blue-200/50">
+              <h2 class="text-2xl font-bold">Kontaktieren Sie uns</h2>
+              <p class="mt-2 text-blue-100">
+                Wir freuen uns auf Ihre Anfrage und beraten Sie gerne persönlich.
+              </p>
+
+              <div class="mt-6 grid gap-4 md:grid-cols-2">
+                <div class="flex items-start gap-3 rounded-2xl bg-white/10 p-4">
+                  <i class="fa-solid fa-location-dot mt-1 text-cyan-300"></i>
+                  <span>Ludwigstraße 37, 64646 Heppenheim</span>
+                </div>
+
+                <div class="flex items-start gap-3 rounded-2xl bg-white/10 p-4">
+                  <i class="fa-solid fa-mobile-screen-button mt-1 text-cyan-300"></i>
+                  <span>0176 / 31419707</span>
+                </div>
+
+                <div class="flex items-start gap-3 rounded-2xl bg-white/10 p-4">
+                  <i class="fa-solid fa-phone-volume mt-1 text-cyan-300"></i>
+                  <span>06252 / 5950420</span>
+                </div>
+
+                <div class="flex items-start gap-3 rounded-2xl bg-white/10 p-4">
+                  <i class="fa-solid fa-envelope mt-1 text-cyan-300"></i>
+                  <a href="mailto:jakobsclean2@gmail.com" class="hover:underline">
+                    jakobsclean2@gmail.com
+                  </a>
+                </div>
+
+                <div class="flex items-start gap-3 rounded-2xl bg-white/10 p-4 md:col-span-2">
+                  <i class="fa-solid fa-globe mt-1 text-cyan-300"></i>
+                  <a
+                    href="https://www.jakobsclean.de"
+                    target="_blank"
+                    class="hover:underline"
+                  >
+                    www.jakobsclean.de
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
