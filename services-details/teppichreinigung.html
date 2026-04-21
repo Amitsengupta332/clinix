@@ -60,6 +60,64 @@
               <li><a href="./winterdienst.html" class="block text-gray-600 hover:text-[#0b2c8f]">Winterdienst</a></li>
             </ul>
           </div>
+
+          <!-- CONTACT FORM BOX -->
+          <div class="mt-8 overflow-hidden rounded-lg bg-[#0b2c8f] text-white shadow-sm">
+            <img
+              src="../images/Teppichreinigung.png"
+              alt="Kontaktformular"
+              class="h-48 w-full object-cover opacity-40"
+            />
+            <div class="p-6">
+              <p class="text-sm text-cyan-300">Kontakt</p>
+              <h3 class="mt-1 text-2xl font-bold">Schreiben Sie uns</h3>
+
+              <form id="contactForm" class="mt-5 space-y-4">
+                <div>
+                  <label for="name" class="mb-2 block text-sm font-semibold">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Ihr Name"
+                    class="w-full rounded bg-white px-4 py-3 text-sm text-[#0b2c8f] outline-none placeholder:text-gray-400"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email" class="mb-2 block text-sm font-semibold">E-Mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Ihre E-Mail"
+                    class="w-full rounded bg-white px-4 py-3 text-sm text-[#0b2c8f] outline-none placeholder:text-gray-400"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="message" class="mb-2 block text-sm font-semibold">Nachricht</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Ihre Nachricht"
+                    class="w-full rounded bg-white px-4 py-3 text-sm text-[#0b2c8f] outline-none placeholder:text-gray-400"
+                    required
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full rounded bg-cyan-400 px-4 py-3 text-sm font-semibold text-[#0b2c8f] transition hover:bg-cyan-300"
+                >
+                  Absenden
+                </button>
+              </form>
+            </div>
+          </div>
         </aside>
 
         <!-- MAIN -->
@@ -111,6 +169,7 @@
           <div class="mt-12">
             <img
               src="../images/Teppichreinigung.png"
+              alt="Teppichreinigung"
               class="w-full h-[420px] object-cover rounded-lg"
             />
           </div>
@@ -142,5 +201,22 @@
         </main>
       </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        Swal.fire({
+          icon: "success",
+          title: "Nachricht gesendet!",
+          text: "Vielen Dank für Ihre Anfrage. Wir melden uns bald bei Ihnen.",
+          confirmButtonColor: "#0b2c8f"
+        });
+
+        this.reset();
+      });
+    </script>
   </body>
 </html>
